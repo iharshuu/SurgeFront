@@ -1,0 +1,204 @@
+/* Body.css */
+
+/* Body */
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+/* Post */
+.post {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.2s ease-in;
+}
+
+.post:hover {
+  transform: translateY(-2px);
+}
+
+/* Post Header */
+.post__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post__avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.post__avatar:hover{
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+.link {
+  text-decoration: none;
+  color: #333;
+}
+.link:hover{
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/* Post Content */
+.post__image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain; /* Change this line to use contain */
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+/* Post Icons */
+.post__icons {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Like Button */
+.post__like-button {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Comment Button */
+.post__comment-button {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Share Button */
+.post__share-button {
+  cursor: pointer;
+  
+}
+
+.post__createdAt{
+  margin-left: auto;
+}
+/* Comments Section */
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  overflow-y:auto; /* Add this line to enable vertical scrolling */
+  max-height: 50px; /* Adjust the maximum height based on your preference */
+}
+
+/* Comment Input */
+.comment-input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Comment Submit Button */
+.comment-button {
+  cursor: pointer;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.comment-button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading Text */
+.loading-text {
+  font-size: 18px;
+  color: #333;
+  margin: 20px;
+}
+
+.dark-theme4{
+  background-color: rgba(49, 47, 47, 0.958);
+}
+
+.dark-theme5{
+  background-color: rgba(75, 73, 73, 0.958);
+  color: white;
+}
+.dark-theme5 h3{
+  color: white;
+}
+
+
+.pl21 {
+	display: block;
+	width: 6.25em;
+	height: 6.25em;
+}
+.pl__ring, .pl__ball {
+	animation: ring 2s ease-out infinite;
+}
+.pl__ball {
+	animation-name: ball;
+}
+
+/* Dark theme  */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: hsl(var(--hue),10%,10%);
+		--fg: hsl(var(--hue),10%,90%);
+	}
+}
+
+/* Animation */
+@keyframes ring {
+	from {
+		stroke-dasharray: 0 257 0 0 1 0 0 258;
+	}
+	25% {
+		stroke-dasharray: 0 0 0 0 257 0 258 0;
+	}
+	50%, to {
+		stroke-dasharray: 0 0 0 0 0 515 0 0;
+	}
+}
+@keyframes ball {
+	from, 50% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: 1;
+	}
+	64% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -109;
+	}
+	78% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -145;
+	}
+	92% {
+		animation-timing-function: ease-in;
+		stroke-dashoffset: -157;
+	}
+	57%, 71%, 85%, 99%, to {
+		animation-timing-function: ease-out;
+		stroke-dashoffset: -163;
+	}
+}

@@ -1,0 +1,40 @@
+/* Main.css */
+.home11 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin-bottom: -20px;
+  }
+  
+  .active {
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border-bottom: 3px solid #0073e6; /* Blue bottom border for active tab */
+    transition: 0.4s;
+  }
+  .dark-theme9{
+    color: white;
+    background-color: rgba(49, 47, 47, 0.928);
+  }
+  .active:hover {
+    font-size: large; /* Change background color on hover */
+  }
+
+  .xyz{
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 700;
+  }
+  .xyz:hover{
+    
+    font-size: large; /* Change background color on hover */
+
+  }
+  
+
+  
+  

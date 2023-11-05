@@ -1,0 +1,70 @@
+/* CreatePost.css */
+
+.create-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .create-post-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  .create-post-form label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .create-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .create-post-form input[type="file"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .create-post-form button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .create-post-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dark-theme7{
+    background-color: rgba(75, 73, 73, 0.958);
+  }
+
+  .dark-theme8{
+    background-color: rgba(75, 73, 73, 0.958);
+    color: white;
+  }
+
+  

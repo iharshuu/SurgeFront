@@ -1,0 +1,13 @@
+.container {
+  margin: auto;
+  width: 700px;
+ /* Change this color to your preferred background color */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.dark-theme1{
+  background-color: rgba(49, 47, 47, 0.988);
+}
+.dark-theme2{
+  background-color:rgba(49, 47, 47, 0.958);
+}
