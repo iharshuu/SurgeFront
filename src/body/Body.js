@@ -56,7 +56,7 @@ const Body = () => {
       return 'Yesterday';
     }
       else if(daysDifference >30){
-        return `${daysDifference % 30} month ago`;
+        return `${parseInt(daysDifference / 30)} month ago`;
       }
      else {
       return `${daysDifference} days ago`;
